@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffccd5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: inline-block;
+}
+
+h1 {
+    color: #d6336c;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #6a0572;
+    margin: 5px 0 0 0;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 45px;
+}
+
+button {
+    background-color: #d6336c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b61e4a;
+}
+
+#surpriseMessage {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #6a0572;
+}
+
+.hidden {
+    display: none;
+}
+
+.heart-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh; /* Full height */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Supaya di belakang elemen lain */
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 2rem;
+    opacity: 0.8;
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-150px) scale(1.5);
+        opacity: 0;
+    }
+}
