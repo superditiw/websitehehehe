@@ -1,5 +1,5 @@
 document.getElementById("yesBtn").addEventListener("click", function() {
-    document.getElementById("messageText").innerText = "YEAYYY ASIKNYA, OKEYY JUMAT YAA BOCILKU!!😘😘🌹🌹❤️💕";
+    document.getElementById("messageText").innerText = "YEAYYY ASIKNYA, OKEYY JUMAT YAA BOCILKU CAYAANGKU CANTIKKUUU!!😘😘🌹🌹❤️💕";
     document.getElementById("surpriseMessage").classList.remove("hidden");
 });
 
